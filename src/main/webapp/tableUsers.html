@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="js/index.js"></script>
+         <script src="js/main.js"></script>
+        <link href="css/menu.css" rel="stylesheet">
+        <title>tableUsers</title>
+    </head>
+
+
+
+    <body>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                        <a class="navbar-brand" href="#">
+
+                        </a>
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="home.html">Pagina principal</a>
+                            </li>
+
+                        </ul>
+
+
+                    </div>
+                </div>
+                <button type="button" class="btn btn-link"><a href="index.html">Salir</a></button>
+
+            </div>
+        </nav>
+        <div>
+            <div class="card text-center">
+                <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="true" href="#">Usuarios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Administradores</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link " aria-current="true" href="#">Empleados</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Lista de usuarios</h5>
+                    <p class="card-text">Agrega usuarios haciendo click en el siguiente enlace.</p>
+                    <a href="addUsers.html" class="btn btn-primary">Agregar usuarios</a>
+                </div>
+                
+                <main class="p-4 d-flex justify-content-center">
+
+            <table class="table">
+
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Apellido</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Correo</th>
+                        <th scope="col">Cedula</th>
+                        <th scope="col">Rol</th>
+                        <th scope="col">Fecha-N</th>
+                        <th scope="col">celular</th>
+                        <th scope="col">Acción</th>
+                    </tr>
+                </thead>
+                <tbody id="Usuarios-tbody">
+
+                </tbody>
+                
+            </table>
+
+
+        </main>
+
+        
+    </body>
+</html>
